@@ -1,2 +1,2 @@
 # Coffee Filter Holder
-A container that hold V60 type coffee filter 
+A container that holds more than 100x V60 coffee filters
