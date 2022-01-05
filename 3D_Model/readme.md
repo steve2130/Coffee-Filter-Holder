@@ -1,5 +1,5 @@
 ## Filter Holder  
-***
+
 If you want to print it, download lid and shell.  
 <span style="font-size: 0.7rem;">*(Why would you do that?)*</span>   
   
