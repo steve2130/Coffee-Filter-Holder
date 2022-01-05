@@ -20,16 +20,18 @@
         margin: 0;
         padding: 0;
         font-family: 'Open Sans', sans-serif;
+        overflow-x: hidden;
     }
 
     body {
         background-color: #383838;
+        
     }
 
     h3 {
-        font-size: 2rem;
+        font-size: 1.2rem;
         text-align: center;
-        margin: 16px 0 16px 0;
+        margin: 8px 0 16px 0;
         color: rgb(182, 182, 182);
         font-family: 'Open Sans', sans-serif;
     }
@@ -65,10 +67,12 @@
     .center {
         width: 720px;
         margin: 0 auto;
+        padding-top: 12px;
     }
 
     iframe {
         border-radius: 20px;
+        
     }
 
     iframe.component {
@@ -87,12 +91,7 @@
         display: inline-block;
     }
 
-    .youtube {
-        display: block;
-        text-align: center;
-        margin: 5rem auto 10px auto;
-        position: sticky;
-    }
+
 
     .container {
         display: flex;
@@ -113,12 +112,25 @@
         padding: 0;
     }
 
+    .yt-container {
+        font-size: 0; /*Dummy*/
+        text-align: center;
+        display: inline;
+    }
+
+    .youtube {
+        display: block;
+        margin: 20% auto 0 auto;
+        height: 120px;
+        position: relative;
+        bottom: 10px;
+    }
     </style>
 
 
 </head>
 <body>
-    <h3>Coffee Filter Holder</h3>
+    
 
     <div class="center">
         <div class="sketchfab-embed-wrapper">
@@ -136,21 +148,22 @@
 
         </div>
 
-        <p>
-            Store more than 100 cone-shaped coffee filters.<br/>
-        </p>
+        <h3>Coffee Filter Holder</h3>
+        <p>Store more than 100 cone-shaped coffee filters.</p>
+        <br/>
 
         <a href="https://github.com/steve2130/coffee_filter_holder" alt="github page">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"/>
             <p class="go-to-github">Details</p>
         </a>
 
-        <div class="youtube">
-            <iframe id="ytplayer" type="text/html" width="430" height="120"
-            src="https://www.youtube.com/embed/?autoplay=1&enablejsapi=1&fs=0&list=PLDLYSwfc8Mm_wUD44CWDzw5jKXAT0hMfh&listType=playlist&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3"
-            frameborder="0" allowfullscreen allow="autoplay">
+        <div class="yt-container">
+            <div class="youtube">
+                <iframe id="ytplayer" type="text/html" width="430" height="120"
+                        src="https://www.youtube.com/embed/?autoplay=1&enablejsapi=1&fs=0&list=PLDLYSwfc8Mm_wUD44CWDzw5jKXAT0hMfh&listType=playlist&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3"
+                        frameborder="0" allowfullscreen allow="autoplay">
+            </div>
         </div>
-
 
 
         <!-- (Doesn't work btw)
