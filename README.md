@@ -7,7 +7,7 @@ Do you want another crappy thing in your home?
 <br>
 
 Then fear not, this filter holder is for you!  
-[3D models](steve2130.githun.io//coffee_filter_holder)
+[3D models](steve2130.github.io/coffee_filter_holder)
 
 <br>
 This filter holder can store upwards of 100 cone-shaped filters.<br>
