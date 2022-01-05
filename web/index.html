@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap" rel="stylesheet"> 
+    <!--By fjstudio, get it on https://www.flaticon.com/free-icon/coffee-filter_4965098#  -->
+    <link rel="shortcut icon" href="lib/coffee-filter.png" type="image/x-icon">
+
+    <title>Filter Holder</title>
+
+    <style> 
+    /*Too lazy to make a css file*/
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    body {
+        background-color: #444444;
+    }
+
+    h3 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 16px 0 16px 0;
+        color: rgb(182, 182, 182);
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    p {
+        color: rgb(207, 207, 207);
+        text-align: left;
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    a {
+        display: block;
+        border-radius: 35px;
+        background-color: rgb(201, 189, 189);
+        width: 90px;
+
+        margin: 2rem auto 0 auto;
+        padding: 2px 16px;
+        text-decoration: none;
+
+    }
+
+    img {
+        height: 30px;
+        text-align: left;
+        display: inline-block;
+        padding-right: 8px;
+        vertical-align: middle;
+    }
+
+    .center {
+        width: 640px;
+        margin: 0 auto;
+    }
+
+    .go-to-github {
+        line-height: 1em;
+        font-size: 0.8rem;
+        text-align: left;
+        color:rgb(58, 58, 58);
+        font-family: 'Noto Sans', sans-serif;
+        height: 25px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .youtube {
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        left: calc(50vw - 200px);
+    }
+
+    </style>
+
+
+</head>
+<body>
+    <h3>Coffee Filter Holder</h3>
+
+    <div class="center">
+        <div class="sketchfab-embed-wrapper">
+            <iframe title="Preview" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/0fb2f16547e44f27ae4de00cd53ac93e/embed?autostart=1&ui_theme=dark"> </iframe>
+        </div>
+    
+
+        <p>
+            Store more than 100 cone-shaped coffee filter.<br/>
+        </p>
+
+        <a href="https://github.com/steve2130/coffee_filter_holder" alt="github page">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"/>
+            <p class="go-to-github">Details</p>
+        </a>
+
+        <div class="youtube">
+            <iframe id="ytplayer" type="text/html" width="400" height="60" src="https://www.youtube.com/embed/?autoplay=1&fs=0&list=PLDLYSwfc8Mm_wUD44CWDzw5jKXAT0hMfh&listType=playlist&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3" frameborder="0" allowfullscreen>
+        </div>
+
+
+        
+        <script type="text/javascript">
+
+            function onYouTubeIframeAPIReady() {
+            // iframeId parameter should match your Iframe's id attribute
+            // https://stackoverflow.com/questions/37244505/how-to-autostart-youtube-video-with-low-volume-iframe
+                var player = new YT.Player('ytplayer', {
+                    events: {
+                        'onReady': function (event) {
+                            event.target.setVolume(20);
+                            event.target.playVideo();
+                        }
+                    }
+                });
+            }
+        </script>
+    </div>
+
+
+
+</body>
+</html>
