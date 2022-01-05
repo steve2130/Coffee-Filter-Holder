@@ -70,6 +70,11 @@
     iframe {
         border-radius: 20px;
     }
+
+    iframe.component {
+        width: calc(720px / 2 - 6px);
+        height: 210px;
+    }
     
     .go-to-github {
         line-height: 1em;
@@ -86,9 +91,26 @@
         display: block;
         text-align: center;
         margin: 5rem auto 10px auto;
+        position: sticky;
+    }
 
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 720px;
+        margin-top: 10px;
+    }
 
+    .inner-container {
+        width: 50%;
+        text-align: center;
+    }
 
+    p.description {
+        font-size: 0.85rem;
+        margin: 2px 0 32px 0;
+        padding: 0;
     }
 
     </style>
@@ -100,9 +122,19 @@
 
     <div class="center">
         <div class="sketchfab-embed-wrapper">
-            <iframe title="Preview" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="720" height="480" src="https://sketchfab.com/models/0fb2f16547e44f27ae4de00cd53ac93e/embed?autostart=1&ui_theme=dark"> </iframe>
+            <iframe title="Preview" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="720" height="430" src="https://sketchfab.com/models/0fb2f16547e44f27ae4de00cd53ac93e/embed?autostart=1&ui_theme=dark"> </iframe>
         </div>
     
+        <div class="container">
+            <div class="inner-container sketchfab-embed-wrapper"> <iframe class="component" title="Shell" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/49380c367cc3474282cab5d2f712017f/embed?autostart=1&ui_theme=dark&dnt=1"> </iframe>
+                <p class="description">Shell</p>
+            </div>
+    
+            <div class="inner-container sketchfab-embed-wrapper"> <iframe class="component" title="Lid" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/cc13db1b95474a79984c790f3ca4f0ea/embed?autostart=1&ui_theme=dark&dnt=1"> </iframe>
+                <p class="description">Lid</p>
+            </div>
+
+        </div>
 
         <p>
             Store more than 100 cone-shaped coffee filters.<br/>
