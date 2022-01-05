@@ -113,25 +113,36 @@
         </a>
 
         <div class="youtube">
-            <iframe id="ytplayer" type="text/html" width="430" height="100" src="https://www.youtube.com/embed/?autoplay=1&fs=0&list=PLDLYSwfc8Mm_wUD44CWDzw5jKXAT0hMfh&listType=playlist&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3" frameborder="0" allowfullscreen>
+            <iframe id="ytplayer" type="text/html" width="430" height="120"
+            src="https://www.youtube.com/embed/?autoplay=1&enablejsapi=1&fs=0&list=PLDLYSwfc8Mm_wUD44CWDzw5jKXAT0hMfh&listType=playlist&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3"
+            frameborder="0" allowfullscreen allow="autoplay">
         </div>
 
 
 
-        <script type="text/javascript">
+        <!-- (Doesn't work btw)
+            
+                https://stackoverflow.com/questions/37244505/how-to-autostart-youtube-video-with-low-volume-iframe
+                
+                
+                <script type="text/javascript">
 
-            function onYouTubeIframeAPIReady() {
-            // iframeId parameter should match your Iframe's id attribute
-            // https://stackoverflow.com/questions/37244505/how-to-autostart-youtube-video-with-low-volume-iframe
-                var player = new YT.Player('ytplayer', {
-                    events: {
-                        'onReady': function (event) {
-                            event.target.setVolume(20);
+                function onYouTubeIframeAPIReady() {
+                    var player = new YT.Player('ytplayer', {
+                        playerVars: { 'autoplay': 1, 'controls': 0 },
+                        events: {
+                            'onReady': onPlayerReady
                         }
-                    }
-                });
-            }
-        </script>
+                    });
+                }
+
+                function onPlayerReady(event) {
+                    event.target.setVolume(10);
+                    event.target.playVideo();
+                }
+
+            </script> 
+        -->
     </div>
 
 
