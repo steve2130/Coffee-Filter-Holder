@@ -12,7 +12,7 @@ Then fear not, this filter holder is for you!
 <br>
 This filter holder can store upwards of 100 cone-shaped filters.<br>
 (Design based on V60 filter. Should fit Kalita though.)<br>
-And it kinda looks good.  
+And it kinda looks good.<br>
 
 <br>
 That's all. :(<br>
