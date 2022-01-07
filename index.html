@@ -25,7 +25,6 @@
 
     body {
         background-color: #383838;
-        
     }
 
     h3 {
@@ -68,6 +67,8 @@
         width: 720px;
         margin: 0 auto;
         padding-top: 12px;
+
+        min-height: calc(100vh - 130px);
     }
 
     iframe {
@@ -116,14 +117,27 @@
         font-size: 0; /*Dummy*/
         text-align: center;
         display: inline;
+        width: 720px;
+        margin: 0 auto;
     }
 
     .youtube {
         display: block;
-        margin: 20% auto 0 auto;
+        margin: 5rem auto 0 auto;
         height: 120px;
         position: relative;
         bottom: 10px;
+    }
+
+
+
+
+    /*Responsive thing*/
+    @media screen and (max-width: 600px) {
+        html, body {
+            width: calc(720px + 20px);
+            min-width: 720px;
+        }
     }
     </style>
 
@@ -132,7 +146,7 @@
 <body>
     
 
-    <div class="center">
+    <div class="center"> <!--Main Content-->
         <div class="sketchfab-embed-wrapper">
             <iframe title="Preview" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="720" height="430" src="https://sketchfab.com/models/0fb2f16547e44f27ae4de00cd53ac93e/embed?autostart=1&ui_theme=dark"> </iframe>
         </div>
@@ -156,42 +170,42 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"/>
             <p class="go-to-github">Details</p>
         </a>
-
-        <div class="yt-container">
-            <div class="youtube">
-                <iframe id="ytplayer" type="text/html" width="430" height="120"
-                        src="https://www.youtube.com/embed/?autoplay=1&enablejsapi=1&fs=0&list=PLDLYSwfc8Mm_wUD44CWDzw5jKXAT0hMfh&listType=playlist&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3"
-                        frameborder="0" allowfullscreen allow="autoplay">
-            </div>
-        </div>
-
-
-        <!-- (Doesn't work btw)
-
-                https://stackoverflow.com/questions/37244505/how-to-autostart-youtube-video-with-low-volume-iframe
-                
-                
-                <script type="text/javascript">
-
-                function onYouTubeIframeAPIReady() {
-                    var player = new YT.Player('ytplayer', {
-                        playerVars: { 'autoplay': 1, 'controls': 0 },
-                        events: {
-                            'onReady': onPlayerReady
-                        }
-                    });
-                }
-
-                function onPlayerReady(event) {
-                    event.target.setVolume(10);
-                    event.target.playVideo();
-                }
-
-            </script> 
-        -->
     </div>
 
 
+
+    <div class="yt-container">
+        <div class="youtube">
+            <iframe id="ytplayer" type="text/html" width="430" height="120"
+                    src="https://www.youtube.com/embed/?autoplay=1&enablejsapi=1&fs=0&list=PLDLYSwfc8Mm_wUD44CWDzw5jKXAT0hMfh&listType=playlist&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3"
+                    frameborder="0" allowfullscreen allow="autoplay">
+        </div>
+    </div>
+
+
+    <!-- (Doesn't work btw)
+
+            https://stackoverflow.com/questions/37244505/how-to-autostart-youtube-video-with-low-volume-iframe
+            
+            
+            <script type="text/javascript">
+
+            function onYouTubeIframeAPIReady() {
+                var player = new YT.Player('ytplayer', {
+                    playerVars: { 'autoplay': 1, 'controls': 0 },
+                    events: {
+                        'onReady': onPlayerReady
+                    }
+                });
+            }
+
+            function onPlayerReady(event) {
+                event.target.setVolume(10);
+                event.target.playVideo();
+            }
+
+        </script> 
+    -->
 
 </body>
 </html>
