@@ -68,7 +68,7 @@
         margin: 0 auto;
         padding-top: 12px;
 
-        min-height: calc(100vh - 130px);
+        height: 100vh;
     }
 
     iframe {
@@ -117,13 +117,12 @@
         font-size: 0; /*Dummy*/
         text-align: center;
         display: inline;
-        width: 720px;
-        margin: 0 auto;
+        height: 200px;
     }
 
     .youtube {
         display: block;
-        margin: 5rem auto 0 auto;
+        margin: 0 auto 0 auto;
         height: 120px;
         position: relative;
         bottom: 10px;
@@ -133,10 +132,13 @@
 
 
     /*Responsive thing*/
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 650px) {
         html, body {
-            width: calc(720px + 20px);
-            min-width: 720px;
+            max-width: calc(720px + 10px);
+        }
+
+        .center {
+            height: calc(100vh - 200px);
         }
     }
     </style>
