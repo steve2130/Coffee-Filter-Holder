@@ -160,8 +160,21 @@
         transition: .15s;
     }
 
+    @keyframes bouncing-cat {
+        0% {transform: translate(0px);}
+        20% {transform: translate(16px, 4px);}
+        40% {transform: translate(-16px, -4px);}
+        50% {transform: translate(0px);}
+        70% {transform: translate(16px, -4px);}
+        90% {transform: translate(-16px, 4px);}
+        100% {transform: translateX(0px);}
+    }
+
     .github-cat:hover {
-        transform: translateX(-16px);
+        animation-name: bouncing-cat;
+        animation-duration: .6s;
+        animation-iteration-count: infinite;
+
     }
 
     .github-button {
